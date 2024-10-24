@@ -10,3 +10,13 @@ p{
     font-weight: bold;
     text-align: center;
 }
+.counter{
+    margin-left: 40%;
+    margin-right: 45%;
+    background-color: green;
+}
+.todo{
+    margin-left: 40%;
+    margin-right: 45%;
+    background-color: saddlebrown;
+}

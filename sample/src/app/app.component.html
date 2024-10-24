@@ -1,23 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="../../public/favicon.ico">
-  <title>Welcome</title>
-</head>
-
-<body>
-  <div>
-    <img (click)="onTesting()" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-      alt="Google Logo">
-
-    <h1>Testing</h1>
-
-    <p>Welcome to {{ data.name }}</p>
-    <input class="demo" [value]="data.name">
-  </div>
-</body>
-
-</html>
+<div class="counter">
+  <h1>
+    Counter
+  </h1>
+  <button (click)="inc()">Increment </button>
+  <h1>
+    {{cnt}}
+  </h1>
+  <button (click)="dec()">Decrement </button>
+</div>
+<div class="todo">
+  <todo></todo>
+</div>
