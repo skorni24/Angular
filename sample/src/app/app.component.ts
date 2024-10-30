@@ -11,7 +11,7 @@ import { WappComponent } from '../Weatherapp/wapp.component';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  cnt = 0;
+  cnt:number = 0;
 
   inc() {
     this.cnt += 1;
