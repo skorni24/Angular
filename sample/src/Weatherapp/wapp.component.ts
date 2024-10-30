@@ -14,6 +14,7 @@ export class WappComponent {
   weather: any = {};
   city: string = '';
   message: string = '';
+  temperature: number = 0;
 
   getWeather() {
     axios
@@ -22,6 +23,7 @@ export class WappComponent {
       )
       .then((response) => {
         this.weather = response.data;
+        this.temperature = Math.round(this.weather.main.temp - 273.15);
       })
       .catch((error) => {
         this.message = 'City not found';
