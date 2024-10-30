@@ -26,6 +26,7 @@ export class WappComponent {
         this.temperature = Math.round(this.weather.main.temp - 273.15);
       })
       .catch((error) => {
+        this.weather = {};
         this.message = 'City not found';
         console.error('Error fetching weather data:', error);
       });
